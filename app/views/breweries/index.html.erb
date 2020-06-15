@@ -1,6 +1,6 @@
 <h1>Breweries:</h1>
 <ol>
 <% @breweries.each do |b| %>
-<li><%= b.name %> - <%= b.state %><br></li>
+<li><%= link_to b.name, brewery_path(b) %> - <%= b.state %><br></li>
 <% end %>
 </ol>
