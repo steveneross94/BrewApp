@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_15_195019) do
+ActiveRecord::Schema.define(version: 2020_06_15_211110) do
 
   create_table "beers", force: :cascade do |t|
     t.string "name"
@@ -19,10 +19,10 @@ ActiveRecord::Schema.define(version: 2020_06_15_195019) do
 
   create_table "breweries", force: :cascade do |t|
     t.string "name"
-    t.string "type"
     t.string "state"
     t.string "website_url"
     t.string "img_url"
+    t.string "brewery_type"
   end
 
   create_table "customers", force: :cascade do |t|
