@@ -4,12 +4,24 @@
     <title>BrewApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+    
+        
 
   <body>
+
+  <ul>
+          <li><%= link_to 'All Beers', beers_path %></li>
+          <li><%= link_to 'All Breweries', breweries_path %></li>
+          <li><%= link_to 'My Favorite Beers', favorites_path%></li>
+  </ul>
     <%= yield %>
   </body>
 </html>
