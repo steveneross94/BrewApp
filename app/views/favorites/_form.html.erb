@@ -1,0 +1,9 @@
+<%= form_for @favorite do |f| %>
+    <%= f.label :beer_id %><br>
+    <%= f.collection_select :beer_id, @beers, :id, :name %><br>
+
+    <%= f.label :customer_id %><br>
+    <%= f.collection_select :customer_id, @customers, :id, :name %><br>
+
+    <%= f.submit 'Okay, 1 more' %>
+<% end  %>

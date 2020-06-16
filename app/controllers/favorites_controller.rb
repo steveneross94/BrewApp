@@ -1,5 +1,6 @@
 class FavoritesController < ApplicationController
-    before_action :find_fav, only: [:show, :edit, :update, :delete]
+    before_action :find_fav, only: [:show, :edit, :update, :destroy]
+    before_action :collection_array, only: [:new, :edit]
     def index
         @favorites = Favorite.all
     end
@@ -20,23 +21,28 @@ class FavoritesController < ApplicationController
     end
 
     def update
-        @favorite.update
+        @favorite.update(fav_params)
         redirect_to favorite_path(@favorite)
     end
 
-    def delete
-        @favorite.delete
+    def destroy
+        @favorite.destroy
         redirect_to favorites_path
     end
 
     private
 
     def fav_params
-        params.require(:favorite).permit(:brewery_id, :customer_id)
+        params.require(:favorite).permit(:beer_id, :customer_id)
     end
 
     def find_fav
         @favorite = Favorite.find(params[:id])
+    end
+
+    def collection_array
+        @beers = Beer.all
+        @customers = Customer.all
     end
     
 end
