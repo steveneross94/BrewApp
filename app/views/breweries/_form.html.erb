@@ -1,0 +1,20 @@
+<%= form_for @brewery do |f| %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %><br>
+
+    <%= f.label :brewery_type %><br>
+    <%= f.collection_select :brewery_type, @types, :brewery_type, :brewery_type %><br>
+
+    <%= f.label :state %><br>
+    <%= f.select(:state,  options_for_select(@states)) %><br>
+
+    <%= f.label :website_url %><br>
+    <%= f.text_field :website_url %><br>
+
+    <%= f.label "Image Url" %><br>
+    <%= f.text_field :img_url %><br>
+
+    <%= f.submit 'Mmmmmm..beeeeeer' %>
+
+
+<% end %>
