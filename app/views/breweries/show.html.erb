@@ -1,5 +1,6 @@
-<h1><%= @brewery.name  %></h1>
-<div class="tenor-gif-embed" data-postid="5964905" data-share-method="host" data-width="100%" data-aspect-ratio="2.382775119617225"><a href="https://tenor.com/view/oktoberfest-beer-gif-5964905">Oktoberfest GIF</a> from <a href="https://tenor.com/search/oktoberfest-gifs">Oktoberfest GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<h1><%= @brewery.name  %></h1><br> 
+<%= image_tag @brewery.img_url %>
+<div class="tenor-gif-embed" data-postid="5964905" data-share-method="host" data-width="50%" data-aspect-ratio="2.382775119617225"><a href="https://tenor.com/view/oktoberfest-beer-gif-5964905">Oktoberfest GIF</a> from <a href="https://tenor.com/search/oktoberfest-gifs">Oktoberfest GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 <ul>
     <li>Location: <%= @brewery.state %><br></li>
     <li>Type: <%= @brewery.brewery_type %><br></li>
