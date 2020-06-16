@@ -163,7 +163,7 @@ Beer.create(name: "Eureka! IPA", brewery_id: 49 )
 Beer.create(name: "Wheel's Up", brewery_id: 50 )
 Beer.create(name: "Betty IPA", brewery_id: 50 )
 Beer.create(name: "Easy Glider", brewery_id: 50 )
-=======
+
 ##should name be username if we do beer-a-dex? can we create a leaderboard?
 # Customer.create(name: "Steven Ross")
 # Customer.create(name: "Andrew de la Vega")
@@ -176,3 +176,150 @@ Beer.create(name: "Easy Glider", brewery_id: 50 )
 # Favorite.create(beer: Beer.first, customer: Customer.first)
 # Favorite.create(beer: Beer.first, customer: Customer.third)
 
+
+avondale_brewing = Brewery.all[0]
+avondale_brewing.update(img_url: "https://avondalebrewing.com/images/logo.svg")
+
+trim_tab_brewing = Brewery.all[1]
+trim_tab_brewing.update(img_url: "https://static.wixstatic.com/media/d4ad6a_2cbf1ca3a83a4a31a8b313f9eb4dd224~mv2.png/v1/fill/w_670,h_186,al_c,q_85,usm_0.66_1.00_0.01/TT_logo_inline_blue.webp")
+
+yellowhammer_brewery = Brewery.all[2]
+yellowhammer_brewery.update(img_url: "https://static.wixstatic.com/media/282b89_c4610016f639472fba918a4a45b42fe5~mv2_d_3080_1313_s_2.png/v1/fill/w_1164,h_494,al_c,q_90,usm_0.66_1.00_0.01/Yellowhammer-without-bird_drop%20shadow_pn.webp")
+
+bearpaw_river = Brewery.all[3]
+bearpaw_river.update(img_url: "http://www.bearpawriverbrewing.com.s3.amazonaws.com/assets/img/brbc_logo.png")
+
+king_street = Brewery.all[4]
+king_street.update(img_url: "http://www.kingstreetbrewing.com/images/logo-king-street-big.png")
+
+nineteentwelve = Brewery.all[5]
+nineteentwelve.update(img_url: "https://secureservercdn.net/166.62.115.254/18a.190.myftpupload.com/wp-content/uploads/2015/10/logo_tm.png")
+
+bad_water = Brewery.all[6]
+bad_water.update(img_url: "https://beerpulse.com/wp-content/uploads/2012/10/Bad-Water-Brewing-logo.png")
+
+bjs_rest = Brewery.all[7]
+bjs_rest.update(img_url: "https://dailyovation.com/wp-content/uploads/2018/04/BJ-Restaurant.jpeg")
+
+blackrock = Brewery.all[8]
+blackrock.update(img_url: "http://blackrockbrewers.com/blogs/wp-content/uploads/2019/07/BRB_REDO-v1.2_white.png")
+
+dragoon = Brewery.all[9]
+dragoon.update(img_url: "https://images.squarespace-cdn.com/content/53ed6608e4b042bb7cb43256/1449612975929-VRKAAPSR5OHG53SMIMFC/stacked_white.png?format=1500w&content-type=image%2Fpng")
+
+grand_canyon = Brewery.all[10]
+grand_canyon.update(img_url: "https://static.wixstatic.com/media/531093_1dc0cbdfbee44c5abe9082e4ff229c7b~mv2_d_1800_1200_s_2.png/v1/fill/w_650,h_430,al_c,q_85,usm_0.66_1.00_0.01/531093_1dc0cbdfbee44c5abe9082e4ff229c7b~mv2_d_1800_1200_s_2.webp")
+
+mudshark = Brewery.all[11]
+mudshark.update(img_url: "https://static.wixstatic.com/media/6881b3_427d54302c164e5ea195b776ab4131d8~mv2.png/v1/fill/w_678,h_322,al_c,q_85,usm_0.66_1.00_0.01/MSB%20Main%20logoF.webp")
+
+richter_aleworks = Brewery.all[12]
+richter_aleworks.update(img_url: "https://brewerydb-images.s3.amazonaws.com/brewery/3r0qlu/upload_FS1YWp-large.png")
+
+santan = Brewery.all[13]
+santan.update(img_url: "https://chooseazbrews.com/wp-content/uploads/2020/01/STB-Brewery-Distillery-Eatery-01.png")
+
+state_fortyeight = Brewery.all[14]
+state_fortyeight.update(img_url: "https://ewscripps.brightspotcdn.com/dims4/default/96a4394/2147483647/strip/true/crop/640x360+0+60/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.abc15.com%2Fphoto%2F2017%2F04%2F27%2FKNXV%20State%20Forty%20Eight_1493338935917_58940756_ver1.0_640_480.jpg")
+
+wren_house = Brewery.all[15]
+wren_house.update(img_url: "https://www.wrenhousebrewing.com/uploads/b/9995bc70-5417-11ea-8555-418ed22d8b78/25d31ced58f2210ca263c37b0ed5b2c8.png?width=1455")
+
+brick_oven_pizza = Brewery.all[16]
+brick_oven_pizza.update(img_url: "https://www.brickovenpizzacompany.com/Content/img/BrickForge-Logo.png")
+
+diamond_bear = Brewery.all[17]
+diamond_bear.update(img_url: "https://cdn.shopify.com/s/files/1/0904/6478/products/RESIZING_DiamondBear_grande.jpg?v=1535033987")
+
+last_forty = Brewery.all[18]
+last_forty.update(img_url: "https://scontent.fewr1-6.fna.fbcdn.net/v/t31.0-8/10582936_304704793048882_1708718117434779898_o.png?_nc_cat=101&_nc_sid=85a577&_nc_ohc=5tEx4wNow9sAX9Wa4_B&_nc_ht=scontent.fewr1-6.fna&oh=f4b7b6ad8e892be643f36477eca146d3&oe=5F0EA015")
+
+rapps_barren = Brewery.all[19]
+rapps_barren.update(img_url: "http://www.rappsbarrenbrewing.com/images/a/e/b/5/8/aeb5805d7f0c152ef33690f026e57f0554c49bd6-rapps-nobg1x.png")
+
+whistleing_springs = Brewery.all[20]
+whistleing_springs.update(img_url: "http://www.darkhillsbrew.com/images/weblogosm.gif")
+
+seven_sisters = Brewery.all[21]
+seven_sisters.update(img_url: "https://slochamber.org/wp-content/uploads/2018/12/7Sisters-Brewing-Company_1200.png")
+
+abnormal_beer = Brewery.all[22]
+abnormal_beer.update(img_url: "https://thefullpint.com/wp-content/uploads/2015/11/Abnormal-Beer-Co.jpg")
+
+altamont = Brewery.all[23]
+altamont.update(img_url: "https://www.altamontbeerworks.com/uploads/b/f9f7e4a0-7bea-11e9-bd75-8b0048015a37/Altamont-Beer-Works-logo-19-white-small_MTAwMD.png?width=400")
+
+auburn_alehouse = Brewery.all[24]
+auburn_alehouse.update(img_url: "https://auburnalehouse.com/portals/0/images/auburn-alehouse-round-logo.png")
+
+back_street = Brewery.all[25]
+back_street.update(img_url: "https://www.backstreetbrew.com/uploads/2/5/4/2/25423927/header_images/1387344417.png")
+
+bear_republic = Brewery.all[26]
+bear_republic.update(img_url: "https://bearrepublic.com/wp-content/themes/bearrepublic/images/logo.png")
+
+bird_street = Brewery.all[27]
+bird_street.update(img_url: "https://utfb-images.untappd.com/sRh19gyU6hLNcdHgJPPRZVVh?auto=compress")
+
+black_hammer = Brewery.all[28]
+black_hammer.update(img_url: "https://lh3.googleusercontent.com/NcDKi7PxxQ9oKbfNk1-1-MXLGvRBhv5D0LcNL04tJcSDHqbHEDHbJiQITA9dONc9k3OKoVKXtnY0gwZ9gr93-V7SESc39Q=s750")
+
+brewbakers = Brewery.all[29]
+brewbakers.update(img_url: "https://lh3.googleusercontent.com/proxy/XxdgR_voFFACC3eniNpwhXElVcu8wrvsA8_bQl2uNMw2iISzry9mDyOo5nffUUeW3n4entleuNQ3sEh8q9SCky0rVSALY3FEE3ADfPr7EysAAAurmAb3ehSl8RGmA2E")
+
+planned_la = Brewery.all[30]
+planned_la.update(img_url: "https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079-1400x621.jpg")
+
+planned_sd = Brewery.all[31]
+planned_sd.update(img_url: "https://webassets.inman.com/wp-content/uploads/2019/10/Untitled-design-2019-10-29T153346.079-1400x621.jpg")
+
+twenty_five = Brewery.all[32]
+twenty_five.update(img_url: "https://shop.brewerytwentyfive.com/uploads/b/e6859020-672c-11ea-b48b-e5d3108aa252/BreweryTwentyFive_Logo_Vertical_RGB_Red.png?width=216")
+
+camino = Brewery.all[33]
+camino.update(img_url: "https://caminobrewing.com/wp-content/uploads/2018/04/camino-fb-1-768x403.png")
+
+chula_vista = Brewery.all[34]
+chula_vista.update(img_url: "https://static.wixstatic.com/media/8d4c14_0d682e5feb6a4a05b36ac1c5170f74ce~mv2_d_3000_3000_s_4_2.png/v1/fill/w_698,h_698,al_c,q_90,usm_0.66_1.00_0.01/8d4c14_0d682e5feb6a4a05b36ac1c5170f74ce~mv2_d_3000_3000_s_4_2.webp")
+
+band_of_brothers = Brewery.all[35]
+band_of_brothers.update(img_url: "https://i.vimeocdn.com/portrait/9630095_300x300")
+
+barnaby = Brewery.all[36]
+barnaby.update(img_url: "https://cdn.justwineapp.com/assets/producer/logo-dark/barnaby-brewing-company.png")
+
+ruth_mcgowans = Brewery.all[37]
+ruth_mcgowans.update(img_url: "https://lh6.ggpht.com/bLzZSmOjoAxpNn33DPU9R6AV0_mrzXa9upql2OxCBUofsgeqtDYC2axsH6L7d3E6eta1mSyprMxKdF-nsCPu09rEoRHUIQ=s750")
+
+craftsman = Brewery.all[38]
+craftsman.update(img_url: "https://lh6.ggpht.com/ayhVu1hZmPzw2SLVlpLt-gFQ9yGVFm7b591yxheLjlaaOdWIHcpxEfU4FLDWpwLZ1r3UiX0Sth0iiomnSBS5uBVqasI-f-I=s750")
+
+dry_river = Brewery.all[40]
+dry_river.update(img_url: "https://images.squarespace-cdn.com/content/5d65f0b311f0070001868992/1568663942282-119CRSCK7OEC11M5M2B9/DryRiverBrewing-Logo-Horiz_150dpi.png?content-type=image%2Fpng")
+
+eight_bridges = Brewery.all[41]
+eight_bridges.update(img_url: "https://utfb-images.untappd.com/logos/3f663ad7a8f08964d92a2de8b45d80bf39cb17db.png?auto=compress")
+
+eppig = Brewery.all[42]
+eppig.update(img_url: "https://pbs.twimg.com/profile_images/743498737087971328/mADnVhXh.jpg")
+
+escape = Brewery.all[43]
+escape.update(img_url: "https://pbs.twimg.com/profile_images/3623887213/e60ff604ef611417bd44262add4a005e_400x400.jpeg")
+
+fieldwork = Brewery.all[44]
+fieldwork.update(img_url: "https://brewpublic.com/wp-content/uploads/2018/01/Fieldwork-Brewing-Co..png")
+
+fort_point = Brewery.all[45]
+fort_point.update(img_url: "https://www.nicepng.com/png/detail/341-3415376_dake-wilson-architecture-logo-fort-point-beer-logo.png")
+
+fountainhead = Brewery.all[46]
+fountainhead.update(img_url: "https://www.fountainheadbrewingco.com/s/img/emotionheader.jpg?1491281034.920px.477px")
+
+geartooth = Brewery.all[47]
+geartooth.update(img_url: "https://d2pxm94gkd1wuq.cloudfront.net/BreweryLogos/Standard/449380831.geartoothalewerks.jpg")
+
+golden_state = Brewery.all[48]
+golden_state.update(img_url: "https://images.squarespace-cdn.com/content/57ac0496b3db2b4ff1e0efbe/1470891476719-M7WKPOPYK8A3D8Y367B5/GSB-pint-glass.png?content-type=image%2Fpng")
+
+hanger_twentyfour = Brewery.all[49]
+hanger_twentyfour.update(img_url: "https://cdn.craftbeer.com/wp-content/uploads/2015/12/22215152/H24_full_logo_2013.jpg")
