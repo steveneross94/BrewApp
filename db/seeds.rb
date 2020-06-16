@@ -2,6 +2,9 @@ require 'rest-client'
 require 'json'
 
 Brewery.destroy_all
+Beer.destroy_all
+Customer.destroy_all
+Favorite.destroy_all
 
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
@@ -160,3 +163,16 @@ Beer.create(name: "Eureka! IPA", brewery_id: 49 )
 Beer.create(name: "Wheel's Up", brewery_id: 50 )
 Beer.create(name: "Betty IPA", brewery_id: 50 )
 Beer.create(name: "Easy Glider", brewery_id: 50 )
+=======
+##should name be username if we do beer-a-dex? can we create a leaderboard?
+# Customer.create(name: "Steven Ross")
+# Customer.create(name: "Andrew de la Vega")
+# Customer.create(name: "Craig")
+# Customer.create(name: "Sean")
+# Customer.create(name: "Yoan Elon Space BBQ Musk Ante")
+
+# Beer.create(name: "Test Beer", brewery: Brewery.first)
+
+# Favorite.create(beer: Beer.first, customer: Customer.first)
+# Favorite.create(beer: Beer.first, customer: Customer.third)
+

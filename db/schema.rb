@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_15_211110) do
+ActiveRecord::Schema.define(version: 2020_06_16_012435) do
 
   create_table "beers", force: :cascade do |t|
     t.string "name"
-    t.string "brewery_id"
+    t.integer "brewery_id"
   end
 
   create_table "breweries", force: :cascade do |t|
