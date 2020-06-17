@@ -1,5 +1,6 @@
+<div class='container brewery-show'>
 <h1><%= @brewery.name  %></h1><br> 
-<%= image_tag @brewery.img_url %>
+<%= image_tag @brewery.img_url %><br>
 <%# <div class="tenor-gif-embed" data-postid="5964905" data-share-method="host" data-width="50%" data-aspect-ratio="2.382775119617225"><a href="https://tenor.com/view/oktoberfest-beer-gif-5964905">Oktoberfest GIF</a> from <a href="https://tenor.com/search/oktoberfest-gifs">Oktoberfest GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script> %>
 
     Location: <%= @brewery.state %><br>
@@ -9,3 +10,4 @@
 
 
 <%= button_to 'Delete this Beer', brewery_path(@brewery), method: :delete%>
+</div>
