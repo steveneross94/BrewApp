@@ -1,6 +1,8 @@
+<div class='container brewery-index'>
 <h1>Breweries:</h1>
-<ol>
+<section>
 <% @breweries.each do |b| %>
-<li><%= link_to b.name, brewery_path(b) %> - <%= b.state %><br></li>
+<p><%= link_to b.name, brewery_path(b), class: "a-primary" %> - <%= b.state %><br></p>
 <% end %>
-</ol>
+</section>
+</div>

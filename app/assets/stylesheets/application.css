@@ -58,7 +58,7 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -69,12 +69,12 @@ li a:hover:hover:not(.active) {
   background-color: goldenrod;
 }
 
-.active {
-  background-color: #4CAF50;
-}
+
 .container {
   width: 75%;
   margin: auto;
+  background-color: #333;
+  color: azure;
 
 }
 
@@ -87,17 +87,77 @@ li a:hover:hover:not(.active) {
   color: azure;
 }
 
-.beer-new {
-  background-color: white;
-
+.beer-index p {
+  color: azure
 }
 
+.beer-new {
+  background-color: #333;
+  color: azure
+}
+
+.beer-new h1 {
+  color: azure
+}
+
+.brewery-index {
+  background-color: #333;
+  color: azure
+}
+
+.brewery-index #link_to {
+  color: azure;
+}
+
+.a-primary{
+  color: azure;
+  
+}
+
+.brewery-new {
+  background-color: #333;
+  color: azure;
+}
+
+.brewery-show {
+  background-color: #333;
+  color: azure
+}
+
+.user-new {
+  background-color: #333;
+  color: azure
+}
+
+.favorite-new {
+  background-color: #333;
+  color: azure
+}
+
+.favorite-new li {
+  background-color: #333;
+  color: azure;
+}
+
+.favorite-index {
+  background: #333;
+  color: azure;
+}
+
+.favorite-index li {
+  background-color: #333;
+  color: azure;
+}
+
+
 .flex-container {
-  display: flex;
+  display: flex;  
 }
 
 .flex-item {
-  background-color: wheat;
+  margin: 50px;
+  background-color: #333;
+  color: azure;
 
 }
 
