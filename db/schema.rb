@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_16_012435) do
+ActiveRecord::Schema.define(version: 2020_06_17_010622) do
 
   create_table "beers", force: :cascade do |t|
     t.string "name"
@@ -25,13 +25,13 @@ ActiveRecord::Schema.define(version: 2020_06_16_012435) do
     t.string "brewery_type"
   end
 
-  create_table "customers", force: :cascade do |t|
-    t.string "name"
-  end
-
   create_table "favorites", force: :cascade do |t|
     t.integer "beer_id"
-    t.integer "customer_id"
+    t.integer "user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
   end
 
 end

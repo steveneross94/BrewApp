@@ -1,7 +1,7 @@
-<h1>My Favorite Beers:</h1>
+<h1>Trending Beers:</h1>
 
 <ol>
 <% @favorites.each do |f| %>
-    <li><%= f.beer.name %> - <%= link_to f.customer.name, favorite_path(f) %></li>
+    <li><%= f.beer.name %> - <%= link_to f.user.username, favorite_path(f) %></li>
 <% end %>
 </ol>

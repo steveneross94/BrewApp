@@ -33,7 +33,7 @@ class FavoritesController < ApplicationController
     private
 
     def fav_params
-        params.require(:favorite).permit(:beer_id, :customer_id)
+        params.require(:favorite).permit(:beer_id, :user_id)
     end
 
     def find_fav
@@ -42,7 +42,7 @@ class FavoritesController < ApplicationController
 
     def collection_array
         @beers = Beer.all
-        @customers = Customer.all
+        @users = User.all
     end
     
 end

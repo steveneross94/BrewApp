@@ -3,7 +3,7 @@ require 'json'
 
 Brewery.destroy_all
 Beer.destroy_all
-Customer.destroy_all
+User.destroy_all
 Favorite.destroy_all
 
 # This file should contain all the record creation needed to seed the database with its default values.
@@ -164,17 +164,25 @@ Beer.create(name: "Wheel's Up", brewery_id: 50 )
 Beer.create(name: "Betty IPA", brewery_id: 50 )
 Beer.create(name: "Easy Glider", brewery_id: 50 )
 
-##should name be username if we do beer-a-dex? can we create a leaderboard?
-Customer.create(name: "Steven Ross")
-Customer.create(name: "Andrew de la Vega")
-Customer.create(name: "Craig")
-Customer.create(name: "Sean")
-Customer.create(name: "Yoan Elon Space BBQ Musk Ante")
+User.create(username: 'IPAGuy7')
+User.create(username: 'GlutenFreeNot4Me')
+User.create(username: 'David-Hopperfield')
+User.create(username: 'Keg_Griffin')
+User.create(username: 'YouDownWithIBV')
+User.create(username: 'George-W-Busch')
+User.create(username: 'I-Drink-There-4-I-Am')
+User.create(username: 'Beerion-Lannister')
+User.create(username: 'Brew_Carey')
+User.create(username: 'KeghanMarkle')
 
 
-Favorite.create(beer: Beer.all.sample, customer: Customer.first)
-Favorite.create(beer: Beer.all.sample, customer: Customer.third)
 
+
+Favorite.create(beer: Beer.all.sample, user: User.third)
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.last)
+Favorite.create(beer: Beer.all.sample, user: User.first)
+Favorite.create(beer: Beer.all.sample, user: User.fifth)
 
 avondale_brewing = Brewery.all[0]
 avondale_brewing.update(img_url: "https://avondalebrewing.com/images/logo.svg")
