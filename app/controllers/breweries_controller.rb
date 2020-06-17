@@ -45,9 +45,9 @@ class BreweriesController < ApplicationController
     end
 
     def types_array
-        @types = Brewery.all.each do |b|
+        @types = Brewery.all.map do |b|
             b.brewery_type
-         end
+         end.uniq
     end
 
     def states
@@ -107,4 +107,6 @@ class BreweriesController < ApplicationController
      "West Virginia",
      "Wyoming"]
     end
+
+
 end

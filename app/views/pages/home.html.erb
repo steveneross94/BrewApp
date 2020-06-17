@@ -1,32 +1,35 @@
-<h1>Welcome to the Home Page</h1>
-
-<div class='flex-container'>
-    <div class='flex-item'>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis exercitationem, delectus aliquid minima accusantium labore iusto iure commodi suscipit recusandae aspernatur, doloribus id. Sint asperiores dolorem iusto ex esse.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis exercitationem, delectus aliquid minima accusantium labore iusto iure commodi suscipit recusandae aspernatur, doloribus id. Sint asperiores dolorem iusto ex esse.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis exercitationem, delectus aliquid minima accusantium labore iusto iure commodi suscipit recusandae aspernatur, doloribus id. Sint asperiores dolorem iusto ex esse.</p>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis exercitationem, delectus aliquid minima accusantium labore iusto iure commodi suscipit recusandae aspernatur, doloribus id. Sint asperiores dolorem iusto ex esse.</p>
-
-    </div>
-
-
-    <div class='flex-item'>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis exercitationem, delectus aliquid minima accusantium labore iusto iure commodi suscipit recusandae aspernatur, doloribus id. Sint asperiores dolorem iusto ex esse.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis exercitationem, delectus aliquid minima accusantium labore iusto iure commodi suscipit recusandae aspernatur, doloribus id. Sint asperiores dolorem iusto ex esse.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis exercitationem, delectus aliquid minima accusantium labore iusto iure commodi suscipit recusandae aspernatur, doloribus id. Sint asperiores dolorem iusto ex esse.</p>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis exercitationem, delectus aliquid minima accusantium labore iusto iure commodi suscipit recusandae aspernatur, doloribus id. Sint asperiores dolorem iusto ex esse.</p>
-
-    </div>
+<div class='home-container'>
+<h1>Beerádex</h1>
 </div>
+
 
 <div class='container'>
 <h3>Mission:</h3>
 <p>The Beerádex™ is a tool that aims to be used by any such person that shares our common goal: leave no beer unknown to those that seek it.</p>
 <p>Listen, we get it, there's a potentially infinite amount of beers out there in the world. From large-scale, international breweries to your next door neighbors craft-IPA that he swears he got right this time - we want to try them all.</p>
 <p>Since we recognize how hard it would be to keep track of all of that, we set out to create a tool that would allow our users to connect with a database that is ever-changing.</p>
-<p>So, here we are, passing on to you the responsibility to help us, the beer drinkers of the world, to complete the database and teach each other about the different types of beer that is out there and the breweries that are deserving of our attention.</p>
+<p>So, here we are, passing on to you the responsibility to help us, the beer drinkers of the world, complete the database and teach each other about the different types of beer that is out there and the breweries that are deserving of our attention.</p>
 <p>Good luck! Please drink responsibily.</p>
 
 </div>
+
+<div class='flex-container'>
+    <div class='flex-item'>
+        <p>Care to contribute?</p>
+        <p><%= link_to 'Add a New User', new_user_path %></p>
+        <p><%= link_to 'Add a New Favorite', new_favorite_path %></p>
+    </div>
+
+
+    <div class='flex-item'>
+        <h3>New to beer? Not sure where to begin your search?</h3>
+        <p>Here's a few recommended breweries from our founder - they haven't been added yet, care to start?</p>
+            <p><a href='https://sixpoint.com/'>Sixpoint Brewery</a></p>
+            <p><a href='https://www.deepellumbrewing.com/'>Deep Ellum Brewing Company</a></p>
+            <p><a href='www.dogfish.com'>Dogfish Head</a></p>
+            <p><a href='https://www.ommegang.com/'>Ommegang Brewery</a></p>
+
+
+    </div>
+</div>
+

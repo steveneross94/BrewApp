@@ -40,8 +40,8 @@ body, html {
 
 
 a {
-    
-  text-decoration: none;
+   padding: 15px; 
+  /* text-decoration: none; */
 }
 
 ul {
@@ -49,7 +49,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: wheat;
 }
 
 li {
@@ -58,10 +58,10 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #333;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 
@@ -70,95 +70,162 @@ li a:hover:hover:not(.active) {
 }
 
 
+
 .container {
   width: 75%;
   margin: auto;
-  background-color: #333;
-  color: azure;
+  background-color: wheat;
+  color: #333;
+  border-radius: 15px;
+  padding: 5px
 
+}
+
+.container p {
+  margin: 5px;
+  padding: 5px
+}
+
+.container h3 {
+  margin: 0px;
 }
 
 .beer-index {
-  background-color: #333;
-  
+  background-color: wheat;
+  margin: auto;
+  margin-top: 10px
+}
+
+.beer-index a {
+  color: #333;
 }
 
 .beer-index h1 {
-  color: azure;
+  color: #333;
+  margin: 5px
 }
 
 .beer-index p {
-  color: azure
+  color: #333
 }
 
 .beer-new {
-  background-color: #333;
-  color: azure
+  background-color: wheat;
+  color: #333;
 }
 
 .beer-new h1 {
-  color: azure
+  color: #333;
 }
 
 .brewery-index {
-  background-color: #333;
-  color: azure
+  background-color: wheat;
+  color: #333;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10px
 }
 
 .brewery-index #link_to {
-  color: azure;
+  color: #333;
 }
 
 .a-primary{
-  color: azure;
+  color: #333;
   
 }
 
 .brewery-new {
-  background-color: #333;
-  color: azure;
+  background-color: wheat;
+  color: #333;
+  margin: auto;
+  margin-top: 10px;
+
 }
 
 .brewery-show {
-  background-color: #333;
-  color: azure
+  background-color: wheat;
+  color: #333
 }
 
 .user-new {
-  background-color: #333;
-  color: azure
+  background-color: wheat;
+  color: #333;
+  margin: 10px 0 0 120px;
 }
 
 .favorite-new {
-  background-color: #333;
-  color: azure
+  background-color: wheat;
+  color: #333;
+  margin: 10px 0 0 120px;
+
 }
 
 .favorite-new li {
-  background-color: #333;
-  color: azure;
+  background-color: wheat;
+  color: #333;
 }
 
 .favorite-index {
-  background: #333;
-  color: azure;
+  background: wheat;
+  color: #333;
 }
 
 .favorite-index li {
-  background-color: #333;
-  color: azure;
+  background-color: wheat;
+  color: #333;
 }
 
 
 .flex-container {
   display: flex;  
-}
-
-.flex-item {
-  margin: 50px;
-  background-color: #333;
-  color: azure;
+  border-radius: 15px;
+  align-content: center;
 
 }
 
+.flex-item{
+  margin: auto;
+  margin-top: 10px;
+  background-color: wheat;
+  color: #333;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  align-content: center;
+
+}
+
+
+.flex-item h3{
+  margin: 15px;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.flex-item p {
+  margin: 15px;
+  text-align: center;
+  align-content: center;
+}
+
+.home-container h1 {
+
+  text-align: center;
+
+}
  
+.nav-bar li {
+  font-weight: bold;
+}
+
+.nav-bar{
+
+  border-radius: 15px;
+
+}
+
+.nav-bar a {
+  text-decoration: none;
+}

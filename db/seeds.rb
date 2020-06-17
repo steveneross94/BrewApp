@@ -183,6 +183,16 @@ Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lan
 Favorite.create(beer: Beer.all.sample, user: User.last)
 Favorite.create(beer: Beer.all.sample, user: User.first)
 Favorite.create(beer: Beer.all.sample, user: User.fifth)
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
+Favorite.create(beer: Beer.all.sample, user: User.find_by(username: 'Beerion-Lannister'))
 
 avondale_brewing = Brewery.all[0]
 avondale_brewing.update(img_url: "https://avondalebrewing.com/images/logo.svg")

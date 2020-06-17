@@ -3,7 +3,7 @@
     <%= f.text_field :name %><br>
 
     <%= f.label :brewery_type %><br>
-    <%= f.collection_select :brewery_type, @types, :brewery_type, :brewery_type %><br>
+    <%= f.select(:state,  options_for_select(@types)) %><br>
 
     <%= f.label :state %><br>
     <%= f.select(:state,  options_for_select(@states)) %><br>
