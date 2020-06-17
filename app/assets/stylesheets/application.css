@@ -13,23 +13,92 @@
  *= require_tree .
  *= require_self
  */
- /* ul {
-    background-color: lightgray;
-  }
-  
-  ul li {
-    display: inline-block;
-    padding: 20px;
-    color: black;
-  }
-  
-  li:hover {
-    background-color: rgb(177, 254, 255);
-    transition-duration: 1s;
-  }
-  
-  .right {
-    float: right;
-  }
+/* html {
+  background-image: url('https://i.imgur.com/qdJVlGR.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+} */
 
-   */
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://i.imgur.com/qdJVlGR.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+a {
+    
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover:hover:not(.active) {
+  background-color: goldenrod;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.container {
+  width: 75%;
+  margin: auto;
+
+}
+
+.beer-index {
+  background-color: #333;
+  
+}
+
+.beer-index h1 {
+  color: azure;
+}
+
+.beer-new {
+  background-color: white;
+
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  background-color: wheat;
+
+}
+
+ 
