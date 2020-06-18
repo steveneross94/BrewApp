@@ -112,10 +112,14 @@ li a:hover:hover:not(.active) {
 .beer-new {
   background-color: wheat;
   color: #333;
+  margin: auto;
+  margin-top: 15px;
 }
 
 .beer-new h1 {
   color: #333;
+
+
 }
 
 .brewery-index {
