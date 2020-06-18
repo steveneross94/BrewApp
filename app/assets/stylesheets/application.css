@@ -88,6 +88,7 @@ li a:hover:hover:not(.active) {
 
 .container h3 {
   margin: 0px;
+  padding-left: 10px;
 }
 
 .beer-index {
