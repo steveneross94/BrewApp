@@ -4,7 +4,7 @@
 <ul>
 <% @favorites.each do |f| %>
     <li><%= f.beer.name %><br>
-    <%= link_to f.user.username, favorite_path(f) %><br></li>
+    <%= link_to f.user.username, user_path(f.user_id) %><br></li>
 <% end %>
 </ul>
 </div>
