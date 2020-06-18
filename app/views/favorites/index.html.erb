@@ -1,9 +1,10 @@
 <div class='container favorite-index'>
 <h1>Trending Beers:</h1>
 
-<ol>
+<ul>
 <% @favorites.each do |f| %>
-    <li><%= f.beer.name %> - <%= link_to f.user.username, favorite_path(f) %></li>
+    <li><%= f.beer.name %><br>
+    <%= link_to f.user.username, favorite_path(f) %><br></li>
 <% end %>
-</ol>
+</ul>
 </div>

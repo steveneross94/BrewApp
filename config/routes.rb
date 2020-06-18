@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :breweries
   resources :users
   resources :favorites
+    post '/favorites/new', to: 'favorites#new'
 
 end

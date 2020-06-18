@@ -102,7 +102,8 @@ li a:hover:hover:not(.active) {
 
 .beer-index h1 {
   color: #333;
-  margin: 5px
+  margin: 5px;
+  padding-left: 5px;
 }
 
 .beer-index p {
@@ -134,6 +135,11 @@ li a:hover:hover:not(.active) {
   color: #333;
 }
 
+.brewery-index h1 {
+  margin: auto;
+  padding-left: 25px;
+}
+
 .a-primary{
   color: #333;
   
@@ -156,6 +162,11 @@ li a:hover:hover:not(.active) {
   background-color: wheat;
   color: #333;
   margin: 10px 0 0 120px;
+  padding: 10px
+}
+
+.user_new h1 {
+  margin: 5px
 }
 
 .favorite-new {
@@ -178,6 +189,7 @@ li a:hover:hover:not(.active) {
 .favorite-index li {
   background-color: wheat;
   color: #333;
+  padding: 0px
 }
 
 
@@ -232,4 +244,73 @@ li a:hover:hover:not(.active) {
 
 .nav-bar a {
   text-decoration: none;
+}
+
+.user_show {
+  margin: auto;
+  margin-top: 10px
+}
+
+.user_show h1 {
+  padding: 0;
+  margin: 5px
+}
+
+.user_show p {
+  font-weight: bold;
+}
+
+.user_show li {
+ 
+  padding-left: 10px
+}
+
+.user_show a {
+  margin: 10px;
+  padding: 10px
+}
+
+.user_index {
+  margin: auto;
+  margin-top: 15px
+}
+
+.user_index a {
+  padding: 0px
+}
+
+.user_index ul {
+padding: 10px
+}
+
+.user_index li {
+  padding: 10px
+}
+
+.user_index li a {
+  padding: 0
+}
+
+.button_to {
+  padding-left: 10px;
+}
+
+.favorite-index {
+  margin: auto;
+  margin-top: 10px;
+  align-content: center;
+}
+
+.favorite-index a {
+  padding: 5px
+}
+
+.favorite-index li {
+  padding: 5px;
+  
+}
+
+.favorite-index ul {
+  align-content: center;
+  justify-content: center;
 }

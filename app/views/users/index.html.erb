@@ -1,0 +1,9 @@
+<div class="container user_index">
+    <h1>Our Users:</h1>
+   <ul>
+    <% @users.each do |u| %>
+        <%= link_to u.username, user_path(u) %><br>
+    <% end %>
+    
+    </ul>
+</div>

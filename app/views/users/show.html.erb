@@ -1,7 +1,10 @@
+<div class="container user_show">
 <h1><%= @user.username %></h1>
-Favorite Beers:
+<p>Favorite Beers:</p>
 <ul>
 <% @user.favorites.each do |f| %>
 <li><%= f.beer.name %></li><br>
     <% end %>
 </ul>
+<%= button_to 'Add Favorite', new_favorite_path %>
+</div>

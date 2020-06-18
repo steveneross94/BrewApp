@@ -14,7 +14,7 @@ class FavoritesController < ApplicationController
 
     def create
         favorite = Favorite.create(fav_params)
-        redirect_to favorites_path
+        redirect_to user_path(favorite.user_id)
     end
 
     def edit
