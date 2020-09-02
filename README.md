@@ -5,7 +5,7 @@ Beeradex is a rails application that was built to serve as a quasi-pokédex for 
 In order to begin:
 
 ## Please Run the Following
-1. bundle 
-2. rails db:migrate 
-3. rails db:seed
-4. rails s
+1. `bundle`
+2. `rails db:migrate`
+3. `rails db:seed`
+4. `rails s`
