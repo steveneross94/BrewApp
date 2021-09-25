@@ -129,11 +129,13 @@ li a:hover:hover:not(.active) {
   color: #333;
   border-radius: 15px;
   margin: auto;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .brewery-index #link_to {
-  color: #333;
+  color: rgb(235, 3, 165);
+  text-decoration: none;
+
 }
 
 .brewery-index h1 {
@@ -142,8 +144,8 @@ li a:hover:hover:not(.active) {
 }
 
 .a-primary{
-  color: #333;
-  
+  color: rgb(235, 3, 165);
+  text-decoration: none;
 }
 
 .brewery-new {
