@@ -1,5 +1,5 @@
 class BreweriesController < ApplicationController
-    before_action :find_brewery, only: [:show, :destroy, :update, :edit]
+    before_action :find_brewery, except: [:get_california_breweries, :index, :new]
     before_action :types_array, only: [:edit, :new]
     before_action :states, only: [:edit, :new]
     def index
@@ -31,13 +31,18 @@ class BreweriesController < ApplicationController
         redirect_to brewery_path(@brewery)
     end
 
+    def get_california_breweries
+        @breweries = Brewery.all.select{|b| b.state == "California"}
+        render 'breweries/california'
+    end
+
 
 
 
     private 
 
     def find_brewery
-        @brewery = Brewery.find(params[:id])
+        @brewery = Brewery.find(params[:id]) unless params[:id] == "california"
     end
 
     def brewery_params

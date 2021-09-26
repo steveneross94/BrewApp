@@ -1,0 +1,10 @@
+<div class='container brewery-index'>
+<h1>Breweries:</h1>
+    <section>
+        <div>
+            <% @breweries.each do |b| %>
+            <p><%= link_to b.name, brewery_path(b), class: "a-primary" %>- <%= b.state %><br></p>
+            <% end %>
+        </div>  
+    </section>
+</div>

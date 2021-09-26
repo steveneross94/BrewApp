@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :beers, only: [:index, :new, :create]
   resources :breweries
+  get '/california', to: 'breweries#get_california_breweries'
   resources :users
   resources :favorites
     post '/favorites/new', to: 'favorites#new'
